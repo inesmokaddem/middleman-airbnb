@@ -1,0 +1,30 @@
+# data/flats.yml
+inesmokaddem:
+  name: "Ines' home"
+  description: "Charming apartment in Lille"
+  city_name: "Lille, France"
+  city_slug: "Lille"
+  wifi: true
+  rating: 4
+  property_type: apartment
+  room_type: "Entire home/apt"
+  room_number: 2
+  bed_type: "Kig size"
+  bathroom_number: 2
+  pictures: 5
+  description_text: "This one bedroom studio lodges 2 people (there's 1 double bed) it is located in the city center, in a calm traditional residential area near city´s main Avenue - 3 minutes walk from Sacré Coeur."
+
+lorrainefav:
+  name: "Lorraine's home"
+  description: "Crazy apartment in Paris"
+  city_name: "Paris, France"
+  city_slug: "Paris"
+  wifi: false
+  rating: 5
+  property_type: apartment
+  room_type: "Entire home/apt"
+  room_number: 6
+  bed_type: "Real bed"
+  bathroom_number: 2
+  pictures: 10
+  description_text: "This one bedroom studio lodges 2 people (there's 1 double bed) it is located in the city center, in a calm traditional residential area near city´s main Avenue - 3 minutes walk from Sacré Coeur."
