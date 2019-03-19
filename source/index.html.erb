@@ -1,21 +1,14 @@
----
-title: Le Wagon - Middleman
----
-
-<%= partial "layouts/banner" %>
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12 col-sm-4">
-      <%= partial "layouts/cards" %>
-    </div>
+<div class="container_site">
+  <div class="img_logo">
+    <% link_to 'index' do %>
+    <%= image_tag 'last_logo.png' %>
+    <% end %>
   </div>
-</div>
-<%= partial "layouts/flats" %>
-<div id="home">
-  <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
-    <p class="about">
-      <%= link_to "More about this template", "about.html" %>
-    </p>
+  <div class="projet">
+    <h1>L'écologie ça passe aussi par ce que l'on porte sur le dos, pas vrai ?</h1>
+    <h2>Alors...Prêts à découvrir Etogs ?</h2>
+    <div class="link_projet">
+      <%= link_to 'C\'est par ici!', '/projet.html', :relative => true %>
+    </div>
   </div>
 </div>

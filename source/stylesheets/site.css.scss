@@ -1,0 +1,292 @@
+// Variables
+// NES
+$nes-gray: #7C7C7C;
+$nes-red: #A81000;
+
+// SNES
+$snes-red: #F12934;
+$snes-blue: #343D93;
+$snes-green: #009554;
+$snes-yellow: #F8EA57;
+
+// N64
+$n64-blue: #011DA9;
+$n64-red: #FE2015;
+$n64-green: #069330;
+$n64-yellow: #FFC001;
+
+// GC 1
+$gc-black: #010101;
+$gc-gray: #92929A;
+$gc-purple: #6549C2;
+
+// GC 2
+$gc-grey: #C2C2C0;
+$gc-dark-purple: #505388;
+$gc-light-purple: #B3B6D9;
+
+$primary: #E81C4F;
+$white: #FFFFFF;
+$black: #000000;
+$silver: #DDDDDD;
+$silver-light: #F5F7F9;
+$text-color: #566B78;
+$pre-border: #6699CC;
+
+// Mixins
+@mixin linear-gradient($angle, $gradient1, $gradient2) {
+  background-color: $gradient2; /* Fallback Color */
+  background-image: -webkit-gradient(linear, $angle, from($gradient1), to($gradient2)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient($angle, $gradient1, $gradient2); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient($angle, $gradient1, $gradient2); /* FF3.6 */
+  background-image:     -ms-linear-gradient($angle, $gradient1, $gradient2); /* IE10 */
+  background-image:      -o-linear-gradient($angle, $gradient1, $gradient2); /* Opera 11.10+ */
+  background-image:         linear-gradient($angle, $gradient1, $gradient2);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=$angle,StartColorStr='#{$gradient1}', EndColorStr='#{$gradient2}');
+}
+
+// Keyframes
+@keyframes fade {
+  0% { opacity: 0 }
+  50% { opacity: 0.5 }
+  100% { opacity: 1 }
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.mt-50 {
+  margin-top: 50px;
+}
+nav {
+  ul {
+    margin: 1rem 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+  }
+  a {
+    margin: 0 1rem;
+    color: $text-color;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+// BLACK MAGIC
+.app > * {
+  display: none;
+}
+
+.app > *:last-child {
+  display: block;
+}
+
+.app > *:target {
+  display: block;
+  animation: fade 300ms linear 1;
+}
+
+.app > *:target ~ * {
+  display: none;
+}
+
+body {
+  background-color: #fff;
+  color: #fff;
+  font-family: 'Inconsolata', monospace;
+  font-size: 18px;
+  line-height: 1.5;
+  background-image: url('../images/clothes1.jpg');
+  background-repeat: no-repeat;
+
+}
+.en-tete {
+  text-align: center;
+}
+h1, h2, strong {
+  color: #333;
+}
+
+a {
+  color: $black;
+}
+
+header {
+  background-color: gray;
+  line-height: 1.2;
+  padding: 8vw 2em;
+  text-align: center;
+
+  h1 {
+    color: $white;
+    font-size: 2.5em;
+    text-transform: uppercase;
+  }
+
+  a {
+    border: 2px solid $white;
+    color: $white;
+    border-radius: 4px;
+    font-size: 0.8em;
+    letter-spacing: 0.2em;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: none 200ms;
+    transition-property: color, background, border;
+
+    &:hover {
+      background: crimson;
+      border-color: crimson;
+    }
+  }
+}
+
+.nes-header {
+  background-color: $nes-gray;
+  @include linear-gradient(90deg, $nes-gray, $black);
+
+  a {
+    &:hover {
+      background: $nes-red;
+      border-color: $nes-red;
+    }
+  }
+}
+
+.snes-header {
+  background-color: $snes-red;
+  @include linear-gradient(90deg, $snes-red, $snes-yellow);
+
+  a {
+    &:hover {
+      background: $snes-green;
+      border-color: $snes-green;
+    }
+  }
+}
+
+.n64-header {
+  background-color: $n64-green;
+  @include linear-gradient(90deg, $n64-green, $n64-yellow);
+
+  a {
+    border: 2px solid $white;
+    color: $white;
+
+    &:hover {
+      background: $n64-yellow;
+      border-color: $n64-yellow;
+    }
+  }
+}
+
+.gc-header {
+  background-color: $gc-purple;
+  @include linear-gradient(90deg, $gc-purple, $gc-gray);
+
+  a {
+    border: 2px solid $white;
+    color: $white;
+
+    &:hover {
+      background: $black;
+      border-color: $black;
+    }
+  }
+}
+
+// Container
+.container {
+  margin: 0 auto;
+  max-width: 50em;
+  padding: 4em 2em;
+}
+
+// index
+.container_site {
+  padding: 10px 100px;
+  text-align: center;
+  .img_logo {
+    width: 50%;
+    margin: 0 auto;
+  }
+  li {
+    img:hover {
+      background: #6549c26b;
+    }
+  }
+}
+.projet {
+  background: rgba(0,0,0,.6);
+  backdrop-filter: grayscale(1) contrast(3) blur(1px);
+  padding: 3px;
+  h1, h2 {
+    color: #fff;
+  }
+  .link_projet {
+
+  }
+}
+.pictures-screen {
+  img {
+    width: 70%;
+  }
+}
+.link {
+  color: #fff;
+  font-size: 25px;
+  &:hover {
+    color: red;
+  }
+}
+// responsive part
+@media (max-width: 768px) {
+  .container_site {
+    padding: 5px;
+    padding-bottom: 15px;
+    margin-top: 25px;
+    .img_logo {
+      width: 100%;
+      img {
+        width: 200px;
+      }
+    }
+    .en-tete {
+      img {
+        width: 270px;
+      }
+    }
+    .projet {
+      h1 {
+        font-size: 15px;
+        text-transform: uppercase;
+      }
+      h2 {
+        font-size: 14px;
+      }
+      .link_projet {
+        a {
+          border: 1px solid white;
+          padding: 2px;
+          background: white;
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+      }
+    }
+    .navigation {
+      img {
+        width: 80px;
+      }
+    }
+    .container {
+      padding: 5px;
+    }
+  }
+}

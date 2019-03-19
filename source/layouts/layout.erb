@@ -6,14 +6,11 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title %></title>
-    <%= stylesheet_link_tag "application" %>
-    <%= javascript_include_tag "application" %>
-    <%= favicon_tag 'images/favicon.png' %>
+    <title><%= current_page.data.title || "Middleman" %></title>
+    <%= stylesheet_link_tag "site" %>
+    <%= javascript_include_tag "site" %>
   </head>
   <body>
-    <%= partial "layouts/navbar" %>
     <%= yield %>
-    <%= partial "layouts/footer" %>
   </body>
 </html>
