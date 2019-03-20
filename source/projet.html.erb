@@ -1,132 +1,134 @@
 <div class="container_site">
   <div class="en-tete">
     <% link_to 'index' do %>
-      <%= image_tag 'last_logo.png' %>
+      <%= image_tag 'transparent_white.png' %>
     <% end %>
   </div>
+  <div class="flex">
+    <nav role="navigation" class="navigation">
+      <ul>
+        <li><a href="#the-default-view"><%= image_tag 'home.svg' %></a></li>
+        <li><a href="#nes"><%= image_tag '1st-picture.svg' %></a></li>
+        <li><a href="#snes"><%= image_tag '2nd-picture.svg' %></a></li>
+        <li><a href="#n64"><%= image_tag '3rd-picture.svg' %></a></li>
+        <li><a href="#gc"><%= image_tag '4e-picture.svg' %></a></li>
+      </ul>
+    </nav>
 
-  <nav role="navigation" class="navigation">
-    <ul>
-      <li><a href="#the-default-view"><%= image_tag 'home.svg' %></a></li>
-      <li><a href="#nes"><%= image_tag '1st-picture.svg' %></a></li>
-      <li><a href="#snes"><%= image_tag '2nd-picture.svg' %></a></li>
-      <li><a href="#n64"><%= image_tag '3rd-picture.svg' %></a></li>
-      <li><a href="#gc"><%= image_tag '4e-picture.svg' %></a></li>
-    </ul>
-  </nav>
+    <main role="main" class="app">
 
-  <main role="main" class="app">
+      <section id="nes" class="projet">
+        <div class="container">
+          <div class="picture">
+            <%= image_tag 'etiquette.svg' %>
+          </div>
 
-    <section id="nes" class="projet">
-      <div class="container">
-        <div class="picture">
-          <%= image_tag 'etiquette.svg' %>
-        </div>
-
-        <div class="bloc-text pb-40">
-          <p>Oui, oui. Il s’agit bien des seules informations que l’on a sur nos fringues, sapes, fripes, guenilles …</p>
-          <p class="uppercase">ET ENCORE</p>
-          <p>Toutes ne sont pas obligatoires.</p>
-          <p>Alors nous sommes dans le flou, on ne sait que très rarement ce que l’on achète et ce que l’on porte.</p>
-        </div>
-        <div class="bloc-text pb-60">
-          <p>D’où viennent les matières ?</p>
-          <p>Qui les a ramassées, assemblées, cousues, teintes ?</p>
-          <p>Et dans quelles conditions ?</p>
-          <p>Combien de kms a voyagé mon produit pour arriver jusqu’ici ?</p>
-          <p>Est-ce que ce tee-shirt a consommé l’équivalent de 50 douches pour être fait ?</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="snes" class="projet">
-      <div class="container">
-        <div class="bloc-text bold">
-          <p>Avec Etogs, nous sommes bien décidés à vous premettre d’être mieux avertis sur tous les vêtements que vous portez.</p>
-          <p>Tant sur l’impact écologique et environnemental de leur fabrication que sur les conditions de travail sur toute la chaîne de production de vos articles.</p>
-        </div>
-
-        <div class="sous-bloc punchline">
-          <p>Comment ça marche ?</p>
-        </div>
-
-        <div class="bloc-explain">
-          <p>1. J’ouvre l’application</p>
-          <p>2. Je scanne le code barre de mon article (code barre EAN - 13 chiffres présent sur la plupart des étiquettes à l'intérieur de votre vêtement)</p>
-          <p>3. J’accède instantanément aux informations de mon article</p>
-        </div>
-
-        <div class="sous-bloc punchline">
-          <h1>Easy</h1>
-        </div>
-
-        <div class="pictures-screen pb-40">
-          <%= image_tag 'appli.svg' %>
-        </div>
-      </div>
-    </section>
-
-    <section id="n64" class="projet">
-      <div class="container">
-        <div class="explain-appli">
-          <p>Si votre article n’est pas encore présent dans notre base de données, vous pouvez le créer vous-même ! Via un simple formulaire, après avoir scanné votre article.</p>
-          <p>Il sera alors disponible pour les futurs utilisateurs.</p>
-
-          <p>Autres options disponibles :</p>
-          <p>Je peux sauvegarder dans mon dressing mes articles favoris et voir l’impact global de mon dressing.</p>
-          <p>Je peux donner un avis qualité sur les articles de mon choix et aussi voir les avis des autres utilisteurs.</p>
-          <p>Je vois la note de l’article et la note attribuée par les consommateurs.</p>
-          <p>Des alternatives produits me sont proposées, pour choisir un article similaire ayant une meilleure note !</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="gc" class="projet">
-      <div class="container">
-        <div class="sous-bloc">
-          <p>Si le projet vous plaît (ou non d’ailleurs) et/ou que vous avez des idées à apporter,
-          <a href="https://webquest.fr/?m=65584_etogs---je-veux-tout-savoir-sur-ce-que-je-porte" class="link">Cliquez ici</a> pour répondre à notre questionnaire</p>
-          <p>PROMIS, ce sera rapide ! Et ça nous sera d’une grande aide pour améliorer notre produit et pouvoir rapidement vous proposer une appli au top pour vos futurs achats!</p>
-          <p>En attendant, vous pouvez déjà tester notre première version sur votre portable à cette adresse: http://www.etogs.club</p>
-          <div class="insta_link">
-            <p>Suivez-vous sur instagram!</p>
-            <%= link_to image_tag("instagram.svg", alt: "instagram"), "https://www.instagram.com/etogs.app/", target: :_blank %>
+          <div class="bloc-text pb-40">
+            <p>Oui, oui. Il s’agit bien des seules informations que l’on a sur nos fringues, sapes, fripes, guenilles …</p>
+            <p class="uppercase">ET ENCORE</p>
+            <p>Toutes ne sont pas obligatoires.</p>
+            <p>Alors nous sommes dans le flou, on ne sait que très rarement ce que l’on achète et ce que l’on porte.</p>
+          </div>
+          <div class="bloc-text pb-60">
+            <p>D’où viennent les matières ?</p>
+            <p>Qui les a ramassées, assemblées, cousues, teintes ?</p>
+            <p>Et dans quelles conditions ?</p>
+            <p>Combien de kms a voyagé mon produit pour arriver jusqu’ici ?</p>
+            <p>Est-ce que ce tee-shirt a consommé l’équivalent de 50 douches pour être fait ?</p>
           </div>
         </div>
-        <div class="sous-bloc bold">
-          <p>Thanks you !</p>
+      </section>
+
+      <section id="snes" class="projet">
+        <div class="container">
+          <div class="bloc-text bold">
+            <p>Avec Etogs, nous sommes bien décidés à vous premettre d’être mieux avertis sur tous les vêtements que vous portez.</p>
+            <p>Tant sur l’impact écologique et environnemental de leur fabrication que sur les conditions de travail sur toute la chaîne de production de vos articles.</p>
+          </div>
+
+          <div class="sous-bloc punchline">
+            <p>Comment ça marche ?</p>
+          </div>
+
+          <div class="bloc-explain">
+            <p>1. J’ouvre l’application</p>
+            <p>2. Je scanne le code barre de mon article (code barre EAN - 13 chiffres présent sur la plupart des étiquettes à l'intérieur de votre vêtement)</p>
+            <p>3. J’accède instantanément aux informations de mon article</p>
+          </div>
+
+          <div class="sous-bloc punchline">
+            <h1>Easy</h1>
+          </div>
+
+          <div class="pictures-screen pb-40">
+            <%= image_tag 'appli.svg' %>
+          </div>
         </div>
-        <div class="contact mt-50">
-          <p>Pour nous écrire, c'est par ici :</p>
-            <p><a href="mailto:etogs.app@email.com"><%= image_tag 'enveloppe.svg' %></a></p>
+      </section>
+
+      <section id="n64" class="projet">
+        <div class="container">
+          <div class="explain-appli">
+            <p>Si votre article n’est pas encore présent dans notre base de données, vous pouvez le créer vous-même ! Via un simple formulaire, après avoir scanné votre article.</p>
+            <p>Il sera alors disponible pour les futurs utilisateurs.</p>
+
+            <p>Autres options disponibles :</p>
+            <p>Je peux sauvegarder dans mon dressing mes articles favoris et voir l’impact global de mon dressing.</p>
+            <p>Je peux donner un avis qualité sur les articles de mon choix et aussi voir les avis des autres utilisteurs.</p>
+            <p>Je vois la note de l’article et la note attribuée par les consommateurs.</p>
+            <p>Des alternatives produits me sont proposées, pour choisir un article similaire ayant une meilleure note !</p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="the-default-view" class="projet">
-      <div class="container">
-        <h1>
-          Sait-on vraiment ce que l'on porte ?
-        </h1>
-        <div class="bloc-text pb-40">
-          <p>« L’industrie textile est la 2ème industrie la plus polluante, après l’industrie du pétrole. »</p>
+      <section id="gc" class="projet">
+        <div class="container">
+          <div class="sous-bloc">
+            <p>Si le projet vous plaît (ou non d’ailleurs) et/ou que vous avez des idées à apporter,
+              <a href="https://webquest.fr/?m=65584_etogs---je-veux-tout-savoir-sur-ce-que-je-porte" class="link">Cliquez ici</a> pour répondre à notre questionnaire</p>
+              <p>PROMIS, ce sera rapide ! Et ça nous sera d’une grande aide pour améliorer notre produit et pouvoir rapidement vous proposer une appli au top pour vos futurs achats!</p>
+              <p>En attendant, vous pouvez déjà tester notre première version sur votre portable à cette adresse: http://www.etogs.club</p>
+              <div class="insta_link">
+                <p>Suivez-vous sur instagram!</p>
+                <%= link_to image_tag("instagram.svg", alt: "instagram"), "https://www.instagram.com/etogs.app/", target: :_blank %>
+              </div>
+            </div>
+            <div class="sous-bloc bold">
+              <p>Thanks you !</p>
+            </div>
+            <div class="contact mt-50">
+              <p>Pour nous écrire, c'est par ici :</p>
+              <p><a href="mailto:etogs.app@email.com"><%= image_tag 'enveloppe.svg' %></a></p>
+            </div>
+          </div>
+        </section>
 
-          <p>« 70% des cours d’eau en Chine sont pollués à cause de l’industrie textile »</p>
+        <section id="the-default-view" class="projet">
+          <div class="container">
+            <h1>
+              Sait-on vraiment ce que l'on porte ?
+            </h1>
+            <div class="bloc-text pb-40">
+              <p>« L’industrie textile est la 2ème industrie la plus polluante, après l’industrie du pétrole. »</p>
 
-          <p>« 70 millions de barils d’essence sont nécessaires pour la production de polyester chaque année »</p>
+              <p>« 70% des cours d’eau en Chine sont pollués à cause de l’industrie textile »</p>
 
-          <p>« 2 500 litres d’eau sont utilisés pour fabriquer un tee-shirt de 250 grammes »</p>
+              <p>« 70 millions de barils d’essence sont nécessaires pour la production de polyester chaque année »</p>
 
-          <p>« 12 kilos de vêtements sont jetés tous les ans par chaque français »</p>
+              <p>« 2 500 litres d’eau sont utilisés pour fabriquer un tee-shirt de 250 grammes »</p>
 
-          <p>« On ne porte même pas le tiers des vêtements présents dans notre dressing »</p>
+              <p>« 12 kilos de vêtements sont jetés tous les ans par chaque français »</p>
 
-          <p>Etc. Etc. Etc.</p>
-        </div>
-        <div class="sous-bloc punchline pb-40">
-          <p class="mb-0">Eh oui, ça fait flipper.</p>
-        </div>
-      </div>
-    </section>
-  </main>
+              <p>« On ne porte même pas le tiers des vêtements présents dans notre dressing »</p>
+
+              <p>Etc. Etc. Etc.</p>
+            </div>
+            <div class="sous-bloc punchline pb-40">
+              <p class="mb-0">Eh oui, ça fait flipper.</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+  </div>
 </div>

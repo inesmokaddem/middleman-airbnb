@@ -95,16 +95,42 @@ nav {
   display: none;
 }
 
+// body {
+//   background-color: #fff;
+//   color: #fff;
+//   font-family: 'Inconsolata', monospace;
+//   font-size: 18px;
+//   line-height: 1.5;
+//   background-image: url('../images/friperie.jpg');
+//   background-repeat: no-repeat;
+// }
+
 body {
-  background-color: #fff;
   color: #fff;
   font-family: 'Inconsolata', monospace;
   font-size: 18px;
   line-height: 1.5;
-  background-image: url('../images/clothes1.jpg');
-  background-repeat: no-repeat;
-
+  width: 100%;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  z-index: 0;
 }
+
+body::after {
+  background: url('../images/friperie.jpg');
+  background-repeat: no-repeat;
+  content: "";
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
 .en-tete {
   text-align: center;
 }
@@ -204,7 +230,7 @@ header {
 // Container
 .container {
   margin: 0 auto;
-  max-width: 50em;
+  max-width: 58em;
   padding: 4em 2em;
 }
 
@@ -221,6 +247,9 @@ header {
       background: #6549c26b;
     }
   }
+  .navigation {
+    width: 15%;
+  }
 }
 .projet {
   background: rgba(0,0,0,.6);
@@ -230,7 +259,14 @@ header {
     color: #fff;
   }
   .link_projet {
-
+    a {
+      border: 1px solid white;
+      padding: 20px;
+      background: white;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 25px;
+    }
   }
 }
 .pictures-screen {
@@ -281,6 +317,7 @@ header {
       }
     }
     .navigation {
+      width: 30%;
       img {
         width: 80px;
       }
