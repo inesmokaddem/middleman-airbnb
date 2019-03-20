@@ -1,14 +1,16 @@
 <div class="container_site">
   <div class="img_logo">
     <% link_to 'index' do %>
-    <%= image_tag 'transparent_black.png' %>
+    <%= image_tag 'transparent_white.png' %>
     <% end %>
   </div>
   <div class="projet">
     <h1>L'écologie ça passe aussi par ce que l'on porte sur le dos, pas vrai ?</h1>
     <h2>Alors...Prêts à découvrir Etogs ?</h2>
     <div class="link_projet">
-      <%= link_to 'C\'est par ici!', '/projet.html', :relative => true %>
+      <% link_to 'projet' do %>
+        <%= image_tag 'button.svg' %>
+      <% end %>
     </div>
   </div>
 </div>

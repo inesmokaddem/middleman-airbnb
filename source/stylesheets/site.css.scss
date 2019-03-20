@@ -230,7 +230,7 @@ header {
 // Container
 .container {
   margin: 0 auto;
-  max-width: 58em;
+  max-width: 42em;
   padding: 4em 2em;
 }
 
@@ -259,14 +259,14 @@ header {
     color: #fff;
   }
   .link_projet {
-    a {
-      border: 1px solid white;
-      padding: 20px;
-      background: white;
-      text-transform: uppercase;
-      font-weight: bold;
-      font-size: 25px;
-    }
+    // a {
+    //   border: 1px solid white;
+    //   padding: 20px;
+    //   background: white;
+    //   text-transform: uppercase;
+    //   font-weight: bold;
+    //   font-size: 25px;
+    // }
   }
 }
 .pictures-screen {
@@ -286,7 +286,6 @@ header {
   .container_site {
     padding: 5px;
     padding-bottom: 15px;
-    margin-top: 25px;
     .img_logo {
       width: 100%;
       img {
@@ -308,11 +307,9 @@ header {
       }
       .link_projet {
         a {
-          border: 1px solid white;
-          padding: 2px;
-          background: white;
-          text-transform: uppercase;
-          font-weight: bold;
+          img {
+            width: 16%;
+          }
         }
       }
     }
