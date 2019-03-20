@@ -230,9 +230,9 @@ header {
 // Container
 .container {
   margin: 0 auto;
-  max-width: 42em;
+  max-width: 63em;
   padding: 4em 2em;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 // index
@@ -270,7 +270,6 @@ header {
     // }
   }
   .explain-appli {
-    font-size: 12px;
     .bloc-explain {
       text-align: left;
     }
@@ -328,6 +327,7 @@ header {
     }
     .container {
       padding: 5px;
+      font-size: 12px;
     }
   }
 }
