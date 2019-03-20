@@ -3,38 +3,44 @@
 (function() {
   var app = {
     'routes': {
-      'nes': {
+      'mise_en_bouche': {
         'rendered': function() {
-          console.log('view currently showing is "nes"');
+          console.log('view currently showing is "mise_en_bouche"');
           app.preventScroll();
         }
       },
-      'snes': {
+      'projet': {
         'rendered': function() {
-          console.log('view currently showing is "snes"');
+          console.log('view currently showing is "projet"');
           app.preventScroll();
         }
       },
-      'n64': {
+      'fonctionnement': {
         'rendered': function() {
-          console.log('view currently showing is "n64"');
+          console.log('view currently showing is "fonctionnement"');
           app.preventScroll();
         }
       },
-      'gc': {
+      'infos': {
         'rendered': function() {
-          console.log('view currently showing is "gc"');
+          console.log('view currently showing is "infos"');
           app.preventScroll();
         }
       },
-      'the-default-view': {
+      'on_sy_met': {
         'rendered': function() {
-          console.log('view currently showing is "the-default-view"');
+          console.log('view currently showing is "on_sy_met"');
+          app.preventScroll();
+        }
+      },
+      'a_propos': {
+        'rendered': function() {
+          console.log('view currently showing is "a_propos"');
           app.preventScroll();
         }
       },
     },
-    'default': 'the-default-view',
+    'default': 'a_propos',
     'preventScroll': function() {
       document.querySelector('html').scrollTop = 0;
       document.querySelector('body').scrollTop = 0;
