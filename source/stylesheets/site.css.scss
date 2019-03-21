@@ -121,7 +121,7 @@ body {
 }
 
 body::after {
-  background: url('../images/friperie.jpg');
+  background: url('../images/friperie.jpg') center center fixed;
   background-repeat: no-repeat;
   content: "";
   opacity: 0.8;
@@ -131,6 +131,10 @@ body::after {
   right: 0;
   left: 0;
   z-index: -1;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 
