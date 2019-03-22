@@ -1,38 +1,3 @@
-// Variables
-// NES
-$nes-gray: #7C7C7C;
-$nes-red: #A81000;
-
-// SNES
-$snes-red: #F12934;
-$snes-blue: #343D93;
-$snes-green: #009554;
-$snes-yellow: #F8EA57;
-
-// N64
-$n64-blue: #011DA9;
-$n64-red: #FE2015;
-$n64-green: #069330;
-$n64-yellow: #FFC001;
-
-// GC 1
-$gc-black: #010101;
-$gc-gray: #92929A;
-$gc-purple: #6549C2;
-
-// GC 2
-$gc-grey: #C2C2C0;
-$gc-dark-purple: #505388;
-$gc-light-purple: #B3B6D9;
-
-$primary: #E81C4F;
-$white: #FFFFFF;
-$black: #000000;
-$silver: #DDDDDD;
-$silver-light: #F5F7F9;
-$text-color: #566B78;
-$pre-border: #6699CC;
-
 // Mixins
 @mixin linear-gradient($angle, $gradient1, $gradient2) {
   background-color: $gradient2; /* Fallback Color */
@@ -72,7 +37,6 @@ nav {
   }
   a {
     margin: 0 1rem;
-    color: $text-color;
     text-decoration: none;
     text-transform: uppercase;
     display: flex;
@@ -109,129 +73,17 @@ nav {
 // }
 
 body {
-  color: #fff;
+  color: #000;
   font-family: "Raleway", "sans-serif";
   font-size: 18px;
   line-height: 1.5;
   width: 100%;
-  display: block;
-  position: relative;
   margin: 0 auto;
   z-index: 0;
 }
 
-body::after {
-  background: url('../images/friperie.jpg') center center fixed;
-  background-repeat: no-repeat;
-  content: "";
-  opacity: 0.8;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  z-index: -1;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-
 .en-tete {
   text-align: center;
-}
-h1, h2, strong {
-  color: #333;
-}
-
-a {
-  color: $black;
-}
-
-header {
-  background-color: gray;
-  line-height: 1.2;
-  padding: 8vw 2em;
-  text-align: center;
-
-  h1 {
-    color: $white;
-    font-size: 2.5em;
-    text-transform: uppercase;
-  }
-
-  a {
-    border: 2px solid $white;
-    color: $white;
-    border-radius: 4px;
-    font-size: 0.8em;
-    letter-spacing: 0.2em;
-    padding: 1em 2em;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: none 200ms;
-    transition-property: color, background, border;
-
-    &:hover {
-      background: crimson;
-      border-color: crimson;
-    }
-  }
-}
-
-.nes-header {
-  background-color: $nes-gray;
-  @include linear-gradient(90deg, $nes-gray, $black);
-
-  a {
-    &:hover {
-      background: $nes-red;
-      border-color: $nes-red;
-    }
-  }
-}
-
-.snes-header {
-  background-color: $snes-red;
-  @include linear-gradient(90deg, $snes-red, $snes-yellow);
-
-  a {
-    &:hover {
-      background: $snes-green;
-      border-color: $snes-green;
-    }
-  }
-}
-
-.n64-header {
-  background-color: $n64-green;
-  @include linear-gradient(90deg, $n64-green, $n64-yellow);
-
-  a {
-    border: 2px solid $white;
-    color: $white;
-
-    &:hover {
-      background: $n64-yellow;
-      border-color: $n64-yellow;
-    }
-  }
-}
-
-.gc-header {
-  background-color: $gc-purple;
-  @include linear-gradient(90deg, $gc-purple, $gc-gray);
-
-  a {
-    border: 2px solid $white;
-    color: $white;
-
-    &:hover {
-      background: $black;
-      border-color: $black;
-    }
-  }
 }
 
 // Container
@@ -247,36 +99,18 @@ header {
   padding: 10px 100px;
   text-align: center;
   .img_logo {
-    width: 50%;
     margin: 0 auto;
-  }
-  li {
-    img:hover {
-      background: #6549c26b;
-    }
   }
   .navigation {
     width: 15%;
   }
 }
 .projet {
-  background: rgba(0,0,0,.6);
-  backdrop-filter: grayscale(1) contrast(3) blur(1px);
   padding: 3px;
   h1, h2 {
-    color: #fff;
+    color: #000;
     text-transform: uppercase;
     font-weight: 100;
-  }
-  .link_projet {
-    // a {
-    //   border: 1px solid white;
-    //   padding: 20px;
-    //   background: white;
-    //   text-transform: uppercase;
-    //   font-weight: bold;
-    //   font-size: 25px;
-    // }
   }
   .explain-appli {
     .bloc-explain {
@@ -290,7 +124,7 @@ header {
   }
 }
 .link {
-  color: #fff;
+  color: #000;
   font-size: 20px;
   &:hover {
     color: red;
@@ -302,9 +136,8 @@ header {
     padding: 5px;
     padding-bottom: 15px;
     .img_logo {
-      width: 100%;
       img {
-        width: 200px;
+        width: 50%;
       }
     }
     .en-tete {
