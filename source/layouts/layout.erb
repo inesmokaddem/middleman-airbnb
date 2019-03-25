@@ -6,12 +6,15 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title || "Etogs-app" %></title>
-    <%= stylesheet_link_tag "site" %>
-    <%= javascript_include_tag "site" %>
+    <title><%= current_page.data.title %></title>
+    <%= stylesheet_link_tag "application" %>
+    <%= javascript_include_tag "application" %>
     <%= favicon_tag 'images/transparent_black.png' %>
   </head>
   <body>
-    <%= yield %>
+    <!-- layouts/layout.erb -->
+    <%= partial "layouts/navbar" %>   <!-- inject layouts/_navbar.html.erb -->
+    <%= yield %>                      <!-- Page content is injected here -->
+    <%= partial "layouts/footer" %>   <!-- inject layouts/_footer.html.erb -->
   </body>
 </html>

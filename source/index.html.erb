@@ -1,145 +1,19 @@
-<div id="fullpage" class="container_site">
-  <section class="custom projet">
-    <div class="img_logo">
-      <%= image_tag 'transparent_black.png' %>
-    </div>
-    <div class="projet">
-      <h1>L'écologie ça passe aussi par ce que l'on porte sur le dos, pas vrai ?</h1>
-      <h2>Alors...Prêts à découvrir Etogs ?</h2>
-      <div class="link_projet">
-        <% link_to 'projet' do %>
-        <%= image_tag 'button.svg' %>
-        <% end %>
-      </div>
-    </div>
-  </section>
-<!-- Section 1 -->
-<section class="custom projet">
-  <div class="container">
-    <h1>
-      Sait-on vraiment ce que l'on porte ?
-    </h1>
-    <div class="bloc-text pb-40">
-      <p>« L’industrie textile est la 2ème industrie la plus polluante, après l’industrie du pétrole. »</p>
+---
+title: Le Wagon - Middleman
+---
+<!-- Banner -->
+<div class="banner" style="background-image: linear-gradient(-225deg, #efa09e69 0%, rgba(0,36,61,0.6) 50%), url(../images/friperie.jpg);">
+  <div class="banner-content">
+    <img src="../images/transparent_white.png" alt="">
+    <p>Je décide d'en savoir plus sur les vêtements que je porte.</p>
+  </div>
+</div>
+<!-- Cards -->
+<div class="wrapper-white">
+  <div class="container padded">
+    <h2 class="text-center">Recent flats</h2>
+    <div class="row">
 
-      <p>« 70% des cours d’eau en Chine sont pollués à cause de l’industrie textile »</p>
-
-      <p>« 70 millions de barils d’essence sont nécessaires pour la production de polyester chaque année »</p>
-
-      <p>« 2 500 litres d’eau sont utilisés pour fabriquer un tee-shirt de 250 grammes »</p>
-
-      <p>« 12 kilos de vêtements sont jetés tous les ans par chaque français »</p>
-
-      <p>« On ne porte même pas le tiers des vêtements présents dans notre dressing »</p>
-
-      <p>Etc. Etc. Etc.</p>
-    </div>
-    <div class="sous-bloc punchline pb-40">
-      <p class="mb-0">Eh oui, ça fait flipper.</p>
     </div>
   </div>
-</section>
-<!-- Section 2 -->
-  <section class="projet custom">
-    <div class="container">
-      <div class="picture">
-        <%= image_tag 'etiquette.svg' %>
-      </div>
-
-      <div class="bloc-text pb-40">
-        <p>Oui, oui. Il s’agit bien des seules informations que l’on a sur nos fringues, sapes, fripes, guenilles …</p>
-        <p class="uppercase">ET ENCORE</p>
-        <p>Toutes ne sont pas obligatoires.</p>
-        <p>Alors nous sommes dans le flou, on ne sait que très rarement ce que l’on achète et ce que l’on porte.</p>
-      </div>
-      <div class="bloc-text pb-60">
-        <p>D’où viennent les matières ?</p>
-        <p>Qui les a ramassées, assemblées, cousues, teintes ?</p>
-        <p>Et dans quelles conditions ?</p>
-        <p>Combien de kms a voyagé mon produit pour arriver jusqu’ici ?</p>
-        <p>Est-ce que ce tee-shirt a consommé l’équivalent de 50 douches pour être fait ?</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section 3 -->
-  <section class="projet custom">
-    <div class="container">
-      <div class="bloc-text bold">
-        <p>Avec Etogs, nous sommes bien décidés à vous premettre d’être mieux avertis sur tous les vêtements que vous portez.</p>
-        <p>Tant sur l’impact écologique et environnemental de leur fabrication que sur les conditions de travail sur toute la chaîne de production de vos articles.</p>
-        <p>Le plus : Vous pourrez voir les retours qualités des consommateurs et poster votre avis aussi.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section 4 -->
-  <section class="projet custom">
-    <div class="container">
-      <div class="explain-appli">
-        <div class="sous-bloc punchline">
-          <p>Comment ça marche ?</p>
-        </div>
-
-        <div class="bloc-explain">
-          <p>1. J’ouvre l’application</p>
-          <p>2. Je scanne le code barre de mon article (code barre EAN - 13 chiffres présent sur la plupart des étiquettes à l'intérieur de votre vêtement)</p>
-          <p>3. J’accède instantanément aux informations de mon article</p>
-        </div>
-
-        <div class="sous-bloc punchline">
-          <h1>Easy</h1>
-        </div>
-
-        <div class="pictures-screen pb-40">
-          <%= image_tag 'appli.svg' %>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section 5 -->
-  <section class="projet custom">
-    <div class="container">
-      <div class="explain-appli">
-        <div class="sous-bloc punchline">
-          <p>Si l’article scanné est déjà référencé, j’attéris instantanément sur sa page sur laquelle je retrouve les informations suivantes :</p>
-        </div>
-
-        <div class="bloc-explain">
-          <p>- Marque / prix / catégorie / description / composition</p>
-          <p>- Note globale, faisant la moyenne de la note environnementale et sociale</p>
-          <p>- Note des consommateurs </p>
-          <p>- Détail des l’impact écologique avec l’empreinte eau et carbone de l’article</p>
-          <p>- Détail de l’impact social avec les conditions de travail et la transparence de la marque</p>
-          <p>- Avis qualité des consommateurs et possibilité d’y ajouter son commentaire</p>
-          <p>- Produits alternatifs proposés </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section 6 -->
-  <section class="projet custom">
-    <div class="container">
-      <div class="sous-bloc">
-        <h1>NEED YOU !</h1>
-        <p>Si le projet vous plaît (ou non d’ailleurs) et/ou que vous avez des idées à apporter,
-          <a href="https://webquest.fr/?m=65992_etogs---je-veux-tout-savoir-sur-ce-que-je-porte" class="link">Cliquez ici</a> pour répondre à notre questionnaire</p>
-          <p>PROMIS, ce sera rapide ! Et ça nous sera d’une grande aide pour améliorer notre produit et pouvoir rapidement vous proposer une appli au top pour vos futurs achats!</p>
-          <p>En attendant, vous pouvez déjà tester notre première version sur votre portable à cette adresse: http://www.etogs.club</p>
-          <div class="insta_link">
-            <p>Suivez-vous sur instagram!</p>
-            <%= link_to image_tag("instagram.svg", alt: "instagram"), "https://www.instagram.com/etogs.app/", target: :_blank %>
-          </div>
-        </div>
-        <div class="sous-bloc bold">
-          <p>Thanks you !</p>
-        </div>
-        <div class="contact mt-2">
-          <p>Pour nous écrire, c'est par ici :</p>
-          <p><a href="mailto:etogs.app@email.com"><%= image_tag 'enveloppe.svg' %></a></p>
-        </div>
-      </div>
-    </section>
 </div>
