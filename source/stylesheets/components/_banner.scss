@@ -35,3 +35,18 @@
     text-transform: uppercase;
   }
 }
+@media (min-width: 1200px) {
+  .banner {
+    height: 95vh;
+    .banner-content {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+  .accroche {
+    .text_accroche {
+      font-size: 25px;
+    }
+  }
+}

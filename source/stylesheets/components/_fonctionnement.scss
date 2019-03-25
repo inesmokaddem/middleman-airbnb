@@ -11,3 +11,14 @@
     max-height: 100%;
   }
 }
+@media (min-width: 1200px) {
+  .fonctionnement {
+    font-size: 20px;
+    h2 {
+      font-size: 22px;
+    }
+    h3 {
+      font-size: 32px;
+    }
+  }
+}
