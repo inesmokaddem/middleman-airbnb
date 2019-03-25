@@ -9,11 +9,12 @@
       font-size: 20px;
     }
     .btns {
-      .btn-scan {
+      background: red;
+      a.btn-scan {
+        padding: 7px 7px;
+        background-color: #ea441d;
         color: white;
-        background-color: red;
-        padding: 10px;
-        border-radius: 10%;
+        border-radius: 10px;
       }
       .btn-help {
         color: white;
