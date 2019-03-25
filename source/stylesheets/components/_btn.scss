@@ -1,0 +1,10 @@
+.btns {
+  display: flex;
+  justify-content: space-around;
+  .btn-scan {
+    color: white;
+    background-color: red !important;
+    padding: 10px;
+    border-radius: 10%;
+  }
+}
