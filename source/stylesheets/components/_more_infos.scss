@@ -1,5 +1,6 @@
 .more_infos {
   font-size: 12px;
+  background: #fff7f7;
   .bold {
     font-weight: bold;
   }
@@ -7,6 +8,10 @@
     i {
       font-size: 40px;
       color: #ea441d;
+    }
+    .sources {
+      font-size: 10px;
+      text-align: right;
     }
   }
   h2 {
