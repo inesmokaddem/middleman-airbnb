@@ -23,8 +23,12 @@ title: Etogs - Presentation
         <p>Avec Etogs, nous sommes bien décidés à vous premettre d’être mieux avertis sur tous les vêtements que vous portez.</p>
         <p>Tant sur l’impact écologique et environnemental de leur fabrication que sur les conditions de travail sur toute la chaîne de production de vos articles.</p>
         <div class="btns">
-            <a class="btn-scan">Essayer le scanner</a>
-            <a class="btn-help">Aidez-nous!</a>
+          <% link_to 'http://etogs.club', target: :_blank do %>
+            <%= image_tag '../images/btn_scan.svg' %>
+          <% end %>
+          <% link_to 'https://webquest.fr/?m=65992_etogs---je-veux-tout-savoir-sur-ce-que-je-porte', target: :_blank do %>
+            <%= image_tag '../images/btn_questionnaire.svg' %>
+          <% end %>
         </div>
       </div>
     </div>
@@ -46,12 +50,17 @@ title: Etogs - Presentation
     <div class="separate"></div>
     <div class="container fonctionnement">
       <div class="container">
-        <h2>Comment ça marche ?</h2>
-        <p>1. J'ouvre l'application</p>
-        <p>2. Je scanne le code barre de mon article (code barre EAN - 13 chiffres présent sur la plupart des étiquettes à l'intérieur de votre vêtement)</p>
-        <p>3. J’accède instantanément aux informations de mon article</p>
-        <p>Et si le produit n’est pas encore référencé ? Vous pouvez le créer vous-même! Il vous suffit de remplir le formulaire avec les informations se trouvant sur l'article.</p>
-        <h3>La communauté, à vous de jouer !</h3>
+        <div class="col-xs-4">
+          <img src="../images/scan_app.png" alt="">
+        </div>
+        <div class="col-xs-8">
+          <h2>Comment ça marche ?</h2>
+          <p>1. J'ouvre l'application</p>
+          <p>2. Je scanne le code barre de mon article (code barre EAN - 13 chiffres présent sur la plupart des étiquettes à l'intérieur de votre vêtement)</p>
+          <p>3. J’accède instantanément aux informations de mon article</p>
+          <p>Et si le produit n’est pas encore référencé ? Vous pouvez le créer vous-même! Il vous suffit de remplir le formulaire avec les informations se trouvant sur l'article.</p>
+        </div>
+        <h3 class="text-center">La communauté, à vous de jouer !</h3>
       </div>
     </div>
     <div class="separate"></div>

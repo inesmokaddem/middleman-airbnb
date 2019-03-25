@@ -1,10 +1,7 @@
 .btns {
   display: flex;
   justify-content: space-around;
-  a {
-    padding: 7px 7px;
-    background-color: #ea441d;
-    color: white;
-    border-radius: 10px;
+  img{
+    width: 90%;
   }
 }
