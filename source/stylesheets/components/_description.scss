@@ -1,5 +1,6 @@
 .app_description {
   padding-top: 25px;
+  padding-bottom: 30px;
   .presentation {
     font-size: 12px;
     h2 {
@@ -44,6 +45,15 @@
       }
       h3 {
         font-size: 30px;
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+  .app_description {
+    .img_app {
+      img {
+        max-width: 85px;
       }
     }
   }
