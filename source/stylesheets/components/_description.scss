@@ -52,8 +52,9 @@
 @media (max-width: 400px) {
   .app_description {
     .img_app {
+      padding-left: 0;
       img {
-        max-width: 130px;
+        max-width: 125px;
       }
     }
   }
