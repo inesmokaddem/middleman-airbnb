@@ -25,19 +25,9 @@
       }
     }
   }
-  .img_app {
-    img {
-      max-width: 145px;
-    }
-  }
 }
 @media (min-width: 1200px) {
   .app_description {
-    .img_app {
-      img {
-        max-width: 90%;
-      }
-    }
     .presentation {
       font-size: 20px;
       h2 {
@@ -45,16 +35,6 @@
       }
       h3 {
         font-size: 30px;
-      }
-    }
-  }
-}
-@media (max-width: 400px) {
-  .app_description {
-    .img_app {
-      padding-left: 0;
-      img {
-        max-width: 125px;
       }
     }
   }

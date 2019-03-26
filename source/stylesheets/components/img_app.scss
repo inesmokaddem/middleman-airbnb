@@ -1,0 +1,20 @@
+.img_app {
+  img {
+    max-width: 145px;
+  }
+}
+@media (min-width: 1200px) {
+  .img_app {
+    img {
+      max-width: 90%;
+    }
+  }
+}
+@media (max-width: 400px) {
+  .img_app {
+    padding-left: 0;
+    img {
+      max-width: 125px;
+    }
+  }
+}
