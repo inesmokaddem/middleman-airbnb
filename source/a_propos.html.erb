@@ -20,11 +20,15 @@
     </div>
     <div class="container a_propos text-center">
       <div class="accompagnement">
-        <img class="fade" src="../images/les_premieres.png" alt="les premieres" width="130px">
+        <% link_to 'https://na.wikilespremieres.com/fr', target: :_blank do %>
+          <img class="fade" src="../images/les_premieres.png" alt="les premieres" width="130px">
+        <% end %>
         <p>Projet incubé au sein de l'incubateur Les Premières.</p>
       </div>
       <div class="work_space">
-        <img class="fade" src="../images/logo-darwin.png" alt="darwin" width="170px">
+        <% link_to 'https://darwin.camp/', target: :_blank do %>
+          <img class="fade" src="../images/logo-darwin.png" alt="darwin" width="170px">
+        <% end %>
         <p>l'espace de travail ? Co-working des Premières, à Darwin (Bordeaux).</p>
       </div>
     </div>
