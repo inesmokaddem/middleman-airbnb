@@ -1,7 +1,0 @@
-.contact_bloc {
-  text-align: center;
-  background: #ea441d2e; }
-  .contact_bloc h2 {
-    font-size: 25px; }
-  .contact_bloc .btn_go {
-    margin-bottom: 20px; }
