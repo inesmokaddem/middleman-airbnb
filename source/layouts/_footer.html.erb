@@ -1,9 +1,10 @@
 <div class="footer">
   <div class="footer-links">
     <a href="https://www.instagram.com/etogs.app/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <%= link_to 'Confidentialité', '/data_protect.html', :relative => true %>
   </div>
   <div class="footer-copyright">
-    <p>Contact : etogs.app@gmail.com</p>
+    <p>Contact : <%= mail_to 'etogs.app@gmail.com', "etogs.app@gmail.com" %></p>
     <p>Etogs©2019</p>
   </div>
 </div>
